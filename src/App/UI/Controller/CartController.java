@@ -18,11 +18,11 @@ public class CartController {
 
         public Cart_Model(Cart_Item cart)
         {
-            this.cart = cart;
-            this.Name = new SimpleStringProperty(cart.name);
-            this.Number = new SimpleIntegerProperty(cart.number);
-            this.Cost = new SimpleIntegerProperty(cart.costGoods);
-            this.SumCost = new SimpleDoubleProperty(cart.number * cart.costGoods);
+//            this.cart = cart;
+//            this.Name = new SimpleStringProperty(cart.name);
+//            this.Number = new SimpleIntegerProperty(cart.number);
+//            this.Cost = new SimpleIntegerProperty(cart.costGoods);
+//            this.SumCost = new SimpleDoubleProperty(cart.number * cart.costGoods);
         }
 
         public String getName() {
