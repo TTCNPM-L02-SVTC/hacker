@@ -71,7 +71,7 @@ public class MainFormController implements Initializable
 //        this.user_img.setImage(MainFormController.user.info.img);
 //        this.user_name.setText(MainFormController.user.name);
 
-        MainFormController.user_scene = new LinkedList<Parent>();
+        MainFormController.user_scene = new LinkedList<>();
         try {
             MainFormController.user_scene.add((FXMLLoader.load(Main.class.getResource("UI/Scene/Menu.fxml"))));
             MainFormController.user_scene.add((FXMLLoader.load(Main.class.getResource("UI/Scene/Cart.fxml"))));

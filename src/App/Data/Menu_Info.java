@@ -2,17 +2,17 @@ package App.Data;
 
 
 public class Menu_Info {
-    public double cost;
+    public int cost;
     public double overall_rating;
 
     public Menu_Info() {
     }
 
-    public double Get_cost() {
+    public int Get_cost() {
         return this.cost;
     }
 
-    public double Set_cost(double new_val) {
+    public int Set_cost(int new_val) {
         this.cost = new_val;
         return new_val;
     }

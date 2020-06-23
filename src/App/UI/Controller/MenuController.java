@@ -37,9 +37,9 @@ public class MenuController implements Initializable {
             Menu_Item item = new Menu_Item();
             item.name = "Dish " + i;
             item.id = 100 + i;
-            item.img = new Image(Main.class.getResourceAsStream("UserImage/a.png"));
+            item.img = new Image(Main.class.getResourceAsStream("UI/UserImage/a.png"));
             item.info = new Menu_Info();
-            item.info.cost = random.nextDouble() * 1000000;
+            item.info.cost = random.nextInt() * 1000000;
             item.info.overall_rating = random.nextDouble() * 5;
             MenuController.menu.menu.add(item);
         }
