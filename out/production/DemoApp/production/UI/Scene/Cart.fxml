@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="production.UI.Controller.CartController">
+   <children>
+      <TableView id="stock_list" fx:id="stock_list" layoutX="58.0" layoutY="92.0" onMouseClicked="#displayCartItem" prefHeight="520.0" prefWidth="829.0">
+         <columns>
+            <TableColumn fx:id="id_col" editable="false" prefWidth="185.0" resizable="false" sortable="false" text="Tên" />
+            <TableColumn fx:id="name_col" editable="false" minWidth="0.0" prefWidth="236.0" resizable="false" sortable="false" text="Số lượng" />
+            <TableColumn fx:id="supplier_col" editable="false" minWidth="0.0" prefWidth="202.0" resizable="false" sortable="false" text="Giá tiền" />
+            <TableColumn fx:id="count_col" editable="false" prefWidth="205.0" resizable="false" sortable="false" text="Thành tiền" />
+         </columns>
+      </TableView>
+   </children>
+</Pane>
