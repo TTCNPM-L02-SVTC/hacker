@@ -5,6 +5,6 @@ module production {
     requires java.rmi;
     requires java.datatransfer;
 
-    exports production;
-    exports production.UI.Controller;
+    exports App;
+    exports App.UI.Controller;
 }

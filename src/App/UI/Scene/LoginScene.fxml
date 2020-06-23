@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="745.0" prefWidth="1124.0" style="-fx-background-color: '#000d40';" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.UI.Controller.LoginController">
+    <children>
+        <Pane layoutX="14.0" layoutY="11.0" prefHeight="724.0" prefWidth="1095.0" style="-fx-background-color: '#e6e6ff';">
+            <children>
+                <Pane layoutX="301.0" layoutY="77.0" prefHeight="537.0" prefWidth="494.0" style="-fx-background-color: '#ffffff';">
+                    <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="172.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Icon/Customer.png" />
+                            </image>
+                        </ImageView>
+                        <TextField fx:id="username" layoutX="124.0" layoutY="269.0" prefHeight="40.0" prefWidth="245.0" promptText="Username">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </TextField>
+                        <PasswordField fx:id="password" layoutX="123.0" layoutY="326.0" prefHeight="40.0" prefWidth="245.0" promptText="Password">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </PasswordField>
+                        <Label layoutX="195.0" layoutY="49.0" text="Đăng nhập">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="login_btn" layoutX="123.0" layoutY="378.0" mnemonicParsing="false" onAction="#checkLogin" prefHeight="40.0" prefWidth="245.0" style="-fx-background-color: '#3d3d3d';" text="Đăng nhập" textFill="WHITE" onMouseEntered="#mouseHover" onMouseExited="#mouseExit">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Button>
+                        <Label fx:id="error_label" alignment="CENTER" layoutX="123.0" layoutY="309.0" prefHeight="17.0" prefWidth="245.0" textFill="RED" />
+                    </children>
+                </Pane>
+            </children></Pane>
+    </children>
+</Pane>
