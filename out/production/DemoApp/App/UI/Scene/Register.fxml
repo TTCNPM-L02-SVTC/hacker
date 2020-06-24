@@ -9,41 +9,46 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="745.0" prefWidth="1124.0" style="-fx-background-color: '#000d40';" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.UI.Controller.LoginController">
+<Pane id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="745.0" prefWidth="1124.0" style="-fx-background-color: '#000d40';" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.UI.Controller.RegisterController">
     <children>
         <Pane layoutX="14.0" layoutY="11.0" prefHeight="724.0" prefWidth="1095.0" style="-fx-background-color: '#e6e6ff';">
             <children>
-                <Pane layoutX="301.0" layoutY="77.0" prefHeight="537.0" prefWidth="494.0" style="-fx-background-color: '#ffffff';">
+                <Pane layoutX="301.0" layoutY="75.0" prefHeight="537.0" prefWidth="494.0" style="-fx-background-color: '#ffffff';">
                     <children>
                         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="172.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@../Icon/Customer.png" />
                             </image>
                         </ImageView>
-                        <TextField fx:id="username" layoutX="124.0" layoutY="269.0" prefHeight="40.0" prefWidth="245.0" promptText="Username">
+                        <TextField fx:id="username" layoutX="125.0" layoutY="178.0" prefHeight="40.0" prefWidth="245.0" promptText="Username">
                             <font>
                                 <Font size="15.0" />
                             </font>
                         </TextField>
-                        <PasswordField fx:id="password" layoutX="123.0" layoutY="326.0" prefHeight="40.0" prefWidth="245.0" promptText="Password">
+                        <PasswordField fx:id="password" layoutX="123.0" layoutY="253.0" prefHeight="40.0" prefWidth="245.0" promptText="Password">
                             <font>
                                 <Font size="15.0" />
                             </font>
                         </PasswordField>
-                        <Label layoutX="195.0" layoutY="49.0" text="Đăng nhập">
+                        <Label layoutX="195.0" layoutY="49.0" text="Đăng ký">
                             <font>
                                 <Font name="System Bold" size="20.0" />
                             </font>
                         </Label>
-                        <Button fx:id="login_btn" layoutX="123.0" layoutY="378.0" mnemonicParsing="false" onAction="#checkLogin" onMouseEntered="#mouseHover" onMouseExited="#mouseExit" prefHeight="40.0" prefWidth="245.0" style="-fx-background-color: '#3d3d3d';" text="Đăng nhập" textFill="WHITE">
+                        <Button fx:id="register_btn" layoutX="125.0" layoutY="393.0" mnemonicParsing="false" onAction="#checkRegister" onMouseEntered="#mouseHover" onMouseExited="#mouseExit" prefHeight="40.0" prefWidth="245.0" style="-fx-background-color: '#3d3d3d';" text="Đăng ký" textFill="WHITE">
                             <font>
                                 <Font name="System Bold" size="15.0" />
                             </font>
                         </Button>
-                        <Label fx:id="error_label" alignment="CENTER" layoutX="123.0" layoutY="309.0" prefHeight="17.0" prefWidth="245.0" textFill="RED" />
-                  <Button fx:id="register_btn" layoutX="340.0" layoutY="491.0" mnemonicParsing="false" onAction="#clickedRegister" prefHeight="25.0" prefWidth="64.0" text="Đăng ký" />
+                  <Button fx:id="login_btn" layoutX="334.0" layoutY="479.0" mnemonicParsing="false" onAction="#clickedLogin" prefHeight="25.0" prefWidth="82.0" text="Đăng nhập" />
+                  <PasswordField fx:id="confirm_password" layoutX="125.0" layoutY="320.0" prefHeight="40.0" prefWidth="245.0" promptText="Password">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </PasswordField>
                     </children>
                 </Pane>
-            </children></Pane>
+            </children>
+        </Pane>
     </children>
 </Pane>

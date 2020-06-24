@@ -65,8 +65,7 @@ public class MenuInfoController
             System.out.println("Food Ordered");
             Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             stage.close();
-//            Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-//            stage.close();
+            CartController.controller.displayAllCart();
         } catch (Exception e){
             System.out.println(e);
         }

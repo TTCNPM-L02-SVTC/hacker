@@ -16,19 +16,22 @@ import javafx.stage.Stage;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class LoginController {
+
+public class RegisterController {
+
     public Label error_label;
     public TextField username;
     public PasswordField password;
-    public Button login_btn;
+    public PasswordField confirm_password;
 
+    public Button login_btn;
     public Button register_btn;
 
-    public void checkLogin(ActionEvent event) throws IOException
+    public void checkRegister(ActionEvent event) throws IOException
     {
-        if (this.verify(username.getText(), password.getText()))
+        if (this.verify(username.getText(), password.getText(),confirm_password.getText()))
         {
-            this.error_label.setVisible(false);
+//            this.error_label.setVisible(false);
             Parent node = FXMLLoader.load(Main.class.getResource("UI/Scene/MainForm.fxml"));
             Scene scene = new Scene(node);
 
@@ -36,7 +39,7 @@ public class LoginController {
             stage.setScene(scene);
             stage.show();
         }
-        else if (this.username.getText().equals("") || this.password.getText().equals(""))
+        else if (this.username.getText().equals("") || this.password.getText().equals("") || this.confirm_password.getText().equals(""))
         {
             this.error_label.setVisible(true);
             this.error_label.setText("Các ô không được để trống!");
@@ -48,12 +51,12 @@ public class LoginController {
         }
     }
 
-    public boolean verify(String name, String pass) throws FileNotFoundException {
+    public boolean verify(String name, String pass, String confirm_pass) throws FileNotFoundException {
         return true;
     }
 
-    public void clickedRegister(ActionEvent e) throws IOException{
-        Parent node = FXMLLoader.load(Main.class.getResource("UI/Scene/Register.fxml"));
+    public void clickedLogin(ActionEvent e) throws IOException{
+        Parent node = FXMLLoader.load(Main.class.getResource("UI/Scene/LoginScene.fxml"));
         Scene scene = new Scene(node);
 
         Stage stage = (Stage)((Node) e.getSource()).getScene().getWindow();
@@ -71,3 +74,4 @@ public class LoginController {
         this.login_btn.setStyle("-fx-background-color: '#3d3d3d';");
     }
 }
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="745.0" prefWidth="1124.0" style="-fx-background-color: '#000d40';" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.UI.Controller.MainFormController">
+   <children>
+      <ToolBar layoutX="14.0" layoutY="14.0" prefHeight="64.0" prefWidth="1099.0" style="-fx-background-color: '#02008f';">
+         <items>
+            <Pane prefHeight="0.0" prefWidth="1078.0">
+               <children>
+                  <Button layoutX="20.0" layoutY="8.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="32.0" style="-fx-background-color: '#ffffff';">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icon/Customer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="menu_btn" layoutX="109.0" layoutY="15.0" mnemonicParsing="false" onAction="#menuClicked" onMouseEntered="#mouseHover" onMouseExited="#mouseExit" prefHeight="25.0" prefWidth="134.0" style="-fx-background-color: '#ffffff';" text="Menu">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="cart_btn" layoutX="295.0" layoutY="15.0" mnemonicParsing="false" onAction="#cartClicked" onMouseEntered="#mouseHover" onMouseExited="#mouseExit" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: '#ffffff';" text="Cart">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="payment_btn" layoutX="494.0" layoutY="15.0" mnemonicParsing="false" onAction="#paymentClicked" onMouseEntered="#mouseHover" onMouseExited="#mouseExit" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: '#ffffff';" text="Payment">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="about_btn" layoutX="680.0" layoutY="15.0" mnemonicParsing="false" onMouseEntered="#mouseHover" onMouseExited="#mouseExit" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: '#ffffff';" text="About">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+               </children>
+            </Pane>
+         </items>
+      </ToolBar>
+      <ToolBar layoutX="954.0" layoutY="89.0" prefHeight="646.0" prefWidth="161.0" style="-fx-background-color: '#1e3d59';">
+         <items>
+            <Pane prefHeight="591.0" prefWidth="144.0">
+               <children>
+                  <Button fx:id="user_btn" layoutX="46.0" layoutY="30.0" mnemonicParsing="false" onAction="#displayAccount" onMouseEntered="#mouseHover" onMouseExited="#mouseExit" prefHeight="48.0" prefWidth="52.0" style="-fx-background-color: '#ffffff';">
+                     <graphic>
+                        <ImageView fx:id="user_img" fitHeight="39.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Label fx:id="user_name" alignment="CENTER" layoutX="1.0" layoutY="87.0" prefHeight="25.0" prefWidth="144.0" text="User name" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </items>
+      </ToolBar>
+      <Pane id="display_field" fx:id="display_field" layoutX="14.0" layoutY="89.0" prefHeight="646.0" prefWidth="933.0" style="-fx-background-color: '#ffffff';" />
+   </children>
+</Pane>
